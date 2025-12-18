@@ -3792,6 +3792,10 @@
       <add>
         Improvements to Korean translations. (woonsan)
       </add>
+      <fix>
+        Use the full path when the installer for Windows calls
+        <code>icacls.exe</code> to set file permissions. (markt)
+      </fix>
     </changelog>
   </subsection>
 </section>
@@ -4334,6 +4338,10 @@
         (markt)
       </fix>
       <fix>
+        Be proactive in cleaning up temporary files after a failed multi-part
+        upload rather than waiting for GC to do it. (markt)
+      </fix>
+      <fix>
         Improve the <code>SSLValve</code> so it is able to handle escaped
         client certificate headers from Nginx. Based on a patch by Florent
         Guillaume. (markt)
@@ -4415,6 +4423,9 @@
         <code>aQute.bnd.annotation.spi.ServiceConsumer</code> annotation as this
         triggers TCK failures for downstream consumers of the API JARs. (markt)
       </fix>
+      <add>
+        Add escaping to log formatters to align with JSON formatter. (markt)
+      </add>
       <update>
         Update the packaged version of the Tomcat Native Library to 1.2.28.
         (markt)
@@ -4580,6 +4591,10 @@
         rather than private to help users wishing to customise the default
         work directory behaviour. (markt)
       </scode>
+      <fix>
+         Fix handling of <code>QSA</code> and <code>QSD</code> flags in
+        <code>RewriteValve</code>. (markt)
+      </fix>
     </changelog>
   </subsection>
   <subsection name="Coyote">
